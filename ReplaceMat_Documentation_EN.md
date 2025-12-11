@@ -226,7 +226,7 @@ After the plugin is executed, the materials in the blueprint are matched and rep
 
 ![bo_d4tecgref24c73beecag_25_305_1327_1040_781_0.jpg](images/bo_d4tecgref24c73beecag_25_305_1327_1040_781_0.jpg)
 
-ReplaceMatV1.2
+
 
 ![bo_d4tecgref24c73beecag_26_298_203_1046_984_0.jpg](images/bo_d4tecgref24c73beecag_26_298_203_1046_984_0.jpg)
 
@@ -338,7 +338,7 @@ Select all these materials with the "release" character in the middle, right-cli
 
 In the "Input Blueprint" field, fill in the blueprint you want to modify. In the "Material Match Mode", select the "Shield mode", and in the "Shield Characters" below, fill in the characters you want to ignore. It can be filled in either Shield Characters 0 or Shield Characters 1. Here, it is designed so that users can trim two segments of characters, so two slots are reserved.
 
-ReplaceMatV1.2
+
 
 In the legend, fill "release" in the "Shield Characters 0" column. After all Settings are completed, There is no need to fill in the underline before "release". When the plugin is executed, it will automatically complete the underline. This also means that the material naming convention uses underscores to separate each word. click "OK" and the plugin will perform the operation.
 
