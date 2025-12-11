@@ -8,31 +8,31 @@ documentation
 
 ## Directory
 
-1. Introduction to the Plugin .1
+1. Introduction to the Plugin
 
-2. Installation method of the plugin .3
+2. Installation method of the plugin
 
-3. The various functional modules of the plugin .7
+3. The various functional modules of the plugin
 
-4. Functions and usage instructions of the plugin .9
+4. Functions and usage instructions of the plugin
 
-    1. Copy the materials from one blueprint asset to another blueprint asset .9
+    1. Copy the materials from one blueprint asset to another blueprint asset
 
-    2. Batch match the materials that need to be replaced for the blueprint according to the rules .17
+    2. Batch match the materials that need to be replaced for the blueprint according to the rules
 
-        1. Common Mode .19
+        1. Common Mode
 
-        2. Inverse Mode .26
+        2. Inverse Mode
 
-        3. Replace Mode 30
+        3. Replace Mode
 
-        4. Equal Mode .35
+        4. Equal Mode
 
-        5. Shield Mode 36
+        5. Shield Mode
 
-    3. Batch set the same material for all material slots of all mesh component in the blueprint asset 40
+    3. Batch set the same material for all material slots of all mesh component in the blueprint asset
 
-    4. Batch set the same material for all material slots of the mesh components specified in the blueprint asset .46
+    4. Batch set the same material for all material slots of the mesh components specified in the blueprint asset
 
 ## 1. Introduction to the Plugin
 
