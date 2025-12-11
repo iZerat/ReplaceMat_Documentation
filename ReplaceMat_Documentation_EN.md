@@ -40,7 +40,7 @@ This plugin can achieve batch replacement of the materials of mesh components in
 
 For example, applicable scenarios: After the project production progress reaches a certain stage, it is inevitable to encounter many subclass assets, such as those derived from adapting to different level scenarios and different storyboards, and those that need to be specifically modified. This is equivalent to dealing with various polymorphic situations. This plugin is designed to address the pain points of users in the above situations and reduce the workload of operators.
 
-ReplaceMat V1.2
+
 
 ![bo_d4tecgref24c73beecag_3_241_192_1164_660_0.jpg](images/bo_d4tecgref24c73beecag_3_241_192_1164_660_0.jpg)
 
@@ -56,7 +56,7 @@ Start the unreal engine project and open the Plugins menu.
 
 ![bo_d4tecgref24c73beecag_4_301_1062_741_655_0.jpg](images/bo_d4tecgref24c73beecag_4_301_1062_741_655_0.jpg)
 
-ReplaceMat V1.2
+
 
 Search for "ReplaceMat" and make sure the "ReplaceMat" plugin is enabled. If it is not enabled, simply click on the radio box on the left side of the plugin to open it.
 
@@ -66,7 +66,7 @@ Right-click at any appropriate place, select Editor Utilities, and select Editor
 
 ![bo_d4tecgref24c73beecag_5_299_1026_1169_731_0.jpg](images/bo_d4tecgref24c73beecag_5_299_1026_1169_731_0.jpg)
 
-ReplaceMat V1.2
+
 
 Create these several Editor Utility Blueprints respectively. AAU_CopyMaterial_from_BP_to_BP, AAU_MatchMaterial_in_BP, AAU_SetTh eSameMaterial_for_BP and AAU_SetTheSameMaterial_for_CP These respectively correspond to several main functions of the plugin.
 
@@ -74,7 +74,7 @@ Create these several Editor Utility Blueprints respectively. AAU_CopyMaterial_fr
 
 ![bo_d4tecgref24c73beecag_6_311_1238_1162_604_0.jpg](images/bo_d4tecgref24c73beecag_6_311_1238_1162_604_0.jpg)
 
-ReplaceMat V1.2
+
 
 ![bo_d4tecgref24c73beecag_7_314_201_1156_597_0.jpg](images/bo_d4tecgref24c73beecag_7_314_201_1156_597_0.jpg)
 
@@ -90,7 +90,7 @@ After the plugin is installed, the user right-click on Scripted Asset in the Unr
 
 They are RM Copy Material from Blueprint to Blueprint. Copy the Material in one Blueprint to another specified blueprint. RM Match Material in Blueprint. Batch match the material that needs to be replaced for the blueprint according to the rules. RM Set the Same Material for all Material
 
-ReplaceMat V1.2 slots of all meshes in the Blueprint batch Set the Same material and RM Set the Same Material for Component Batch set the same material for all material slots of the mesh specified in the blueprint.
+slots of all meshes in the Blueprint batch Set the Same material and RM Set the Same Material for Component Batch set the same material for all material slots of the mesh specified in the blueprint.
 
 ## 4. Functions and usage instructions of the plugin
 
@@ -112,7 +112,7 @@ If the execution fails, a pop-up window will prompt the execution failure and in
 
 For instance, here it prompts that there is no valid blueprint input. Users need to fill in valid blueprint assets. Other functions of the plugin will also have similar prompt messages.
 
-ReplaceMat V1.2
+
 
 Here are detailed examples. For instance, we have two blueprints, namely BP_Mannequin and BP_Mannequin_release. The skeletal meshes contained in these two blueprints are the same, but the materials on the skeletal meshes are different. The material of the release version is green.
 
@@ -122,7 +122,7 @@ Meanwhile, the material of the BP_Mannequin_release blueprint contains the "rele
 
 ![bo_d4tecgref24c73beecag_12_300_1319_1040_793_0.jpg](images/bo_d4tecgref24c73beecag_12_300_1319_1040_793_0.jpg)
 
-ReplaceMat V1.2
+
 
 ![bo_d4tecgref24c73beecag_13_300_194_1047_792_0.jpg](images/bo_d4tecgref24c73beecag_13_300_194_1047_792_0.jpg)
 
@@ -130,13 +130,13 @@ Moreover, on these two blueprint assets, apart from the characters, there are al
 
 ![bo_d4tecgref24c73beecag_13_300_1410_1039_439_0.jpg](images/bo_d4tecgref24c73beecag_13_300_1410_1039_439_0.jpg)
 
-ReplaceMat V1.2
+
 
 Suppose at this point the requirement is to set the material of BP_Mannequin to be consistent with BP_Mannequin_release, right-click on any Asset and select Scripted Asset Actions, Select RM Copy Material from Blueprint to Blueprint.
 
 ![bo_d4tecgref24c73beecag_14_299_560_1169_707_0.jpg](images/bo_d4tecgref24c73beecag_14_299_560_1169_707_0.jpg)
 
-ReplaceMat V1.2
+
 
 In the "Source Blueprint" column, fill in the Blueprint asset of the material you want to copy. In the "Target Blueprint" column, fill in the blueprint asset of the material you want to modify. After the Settings are completed, click OK.
 
@@ -152,13 +152,13 @@ At the same time, the execution status of the plugin can also be seen in the Out
 
 LogTemp: Display: Has been copy 14 materials.
 
-## ReplaceMat V1.2
+
 
 This is sorted overall by component number and material slot number. As long as the skeletal mesh configuration in your two blueprints is the same, you can use this function, for example, if both blueprints are subclass of a certain blueprint, or one blueprint is a subclass of the other blueprint.
 
 The material effects in the detailed interface of a general blueprint are not updated immediately. At this time, you need to close the interface and then reopen the blueprint interface to see the replaced material effects.
 
-ReplaceMat V1.2
+
 
 ## 2. Batch match the materials that need to be replaced for the blueprint according to the rules
 
@@ -194,7 +194,7 @@ Corresponding to the following material balls, there are a total of 3 skeletal m
 
 ![bo_d4tecgref24c73beecag_21_299_1467_981_630_0.jpg](images/bo_d4tecgref24c73beecag_21_299_1467_981_630_0.jpg)
 
-ReplaceMat V1.2
+
 
 Suppose at this point, it is necessary to create a shot for the A01 storyboard. To change the character to red, the materials in the blueprint need to be replaced with the following materials. These materials already have the suffix A01, and each material slot needs to correspond one-to-one. The original body material slot should be filled with body_A01. The original material slot of head needs to be filled with head_A01 and so on. First, create a child blueprint class of BP_Mannequin.
 
@@ -240,7 +240,7 @@ If the materials of the mesh in the blueprint are set with suffixes, for example
 
 ![bo_d4tecgref24c73beecag_27_301_669_1042_783_0.jpg](images/bo_d4tecgref24c73beecag_27_301_669_1042_783_0.jpg)
 
-ReplaceMat V1.2
+
 
 ![bo_d4tecgref24c73beecag_28_242_193_1166_747_0.jpg](images/bo_d4tecgref24c73beecag_28_242_193_1166_747_0.jpg)
 
@@ -250,7 +250,7 @@ Scripted Asset Actions, then select "RM Match Material in Blueprint".
 
 ![bo_d4tecgref24c73beecag_28_300_1122_891_933_0.jpg](images/bo_d4tecgref24c73beecag_28_300_1122_891_933_0.jpg)
 
-ReplaceMat V1.2
+
 
 In the "Input Blueprint" field, fill in the blueprint you want to replace materials. In the "Material Match Mode", select the "Inverse mode". After completing the Settings, click OK.
 
@@ -260,7 +260,7 @@ Then the materials in the blueprint asset were matched and replaced back with th
 
 ![bo_d4tecgref24c73beecag_29_299_1239_617_866_0.jpg](images/bo_d4tecgref24c73beecag_29_299_1239_617_866_0.jpg)
 
-## ReplaceMat V1.2
+
 
 ![bo_d4tecgref24c73beecag_30_293_196_859_1440_0.jpg](images/bo_d4tecgref24c73beecag_30_293_196_859_1440_0.jpg)
 
@@ -296,7 +296,7 @@ After the plugin is executed, the materials in the blueprint assets are matched 
 
 ![bo_d4tecgref24c73beecag_34_300_1062_735_1049_0.jpg](images/bo_d4tecgref24c73beecag_34_300_1062_735_1049_0.jpg)
 
-ReplaceMat V1.2
+
 
 ![bo_d4tecgref24c73beecag_35_298_205_898_674_0.jpg](images/bo_d4tecgref24c73beecag_35_298_205_898_674_0.jpg)
 
@@ -306,7 +306,7 @@ At the same time, the execution status of the plugin can also be seen in the Out
 
 ![bo_d4tecgref24c73beecag_35_294_1931_1017_143_0.jpg](images/bo_d4tecgref24c73beecag_35_294_1931_1017_143_0.jpg)
 
-ReplaceMat V1.2
+
 
 ## 4. Equal Mode
 
@@ -330,7 +330,7 @@ The shield mode is rather complex and is used to handle situations where the mat
 
 ![bo_d4tecgref24c73beecag_37_299_857_1169_706_0.jpg](images/bo_d4tecgref24c73beecag_37_299_857_1169_706_0.jpg)
 
-ReplaceMat V1.2
+
 
 Select all these materials with the "release" character in the middle, right-click and select Scripted Asset behavior, then select "RM Match Material in Blueprint".
 
@@ -348,7 +348,7 @@ After the plugin is executed, the materials in the blueprint assets are matched 
 
 ![bo_d4tecgref24c73beecag_39_358_1411_472_697_0.jpg](images/bo_d4tecgref24c73beecag_39_358_1411_472_697_0.jpg)
 
-ReplaceMat V1.2
+
 
 ![bo_d4tecgref24c73beecag_40_299_205_897_1521_0.jpg](images/bo_d4tecgref24c73beecag_40_299_205_897_1521_0.jpg)
 
@@ -356,7 +356,7 @@ At the same time, the execution status of the plugin can also be seen in the Out
 
 ![bo_d4tecgref24c73beecag_40_293_1976_1037_135_0.jpg](images/bo_d4tecgref24c73beecag_40_293_1976_1037_135_0.jpg)
 
-ReplaceMat V1.2
+
 
 ## 3. Batch set the same material for all material slots of all mesh component in the blueprint asset
 
@@ -370,7 +370,7 @@ After clicking, you can see the detailed operation panel of this function.
 
 In the "Input Blueprint" field, fill in the blueprint asset of the material you want to replace. In the "Input Material" field, fill in the material you want to replace to. Finally, click "OK" and the plugin will perform the operation.
 
-ReplaceMat V1.2
+
 
 The following is an operation example. Suppose there is a blueprint asset, a material of an ice cube.
 
@@ -382,7 +382,7 @@ Right-click on the Asset, select Scripted Asset Actions, and select "RM Set the 
 
 In the "Input Blueprint" column of the Input window, fill in the above-mentioned blueprint assets. In the "Input Material" column, fill in the ice cube material. After the Settings are completed, click OK.
 
-ReplaceMat V1.2
+
 
 ![bo_d4tecgref24c73beecag_43_309_192_780_445_0.jpg](images/bo_d4tecgref24c73beecag_43_309_192_780_445_0.jpg)
 
@@ -392,7 +392,7 @@ After the plugin is executed, the ice cube material is filled into all the mater
 
 ![bo_d4tecgref24c73beecag_43_308_1407_548_705_0.jpg](images/bo_d4tecgref24c73beecag_43_308_1407_548_705_0.jpg)
 
-ReplaceMat V1.2
+
 
 ![bo_d4tecgref24c73beecag_44_300_195_936_1566_0.jpg](images/bo_d4tecgref24c73beecag_44_300_195_936_1566_0.jpg)
 
@@ -402,7 +402,7 @@ LogTemp: Display: ---------- Replace Mat Plugins Message -
 
 LogTemp: Display: Has been set 7 materials in 1 Blueprint.
 
-ReplaceMat V1.2
+
 
 This function not only enables operations on individual blueprint asset but also allows for batch operations on multiple blueprint assets simultaneously.
 
@@ -428,7 +428,7 @@ LogTemp: Display: ---------- Replace Mat Plugins Message
 
 LogTemp: Display: Has been set 21 materials in 3 Blueprints.
 
-ReplaceMat V1.2
+
 
 ## 4. Batch set the same material for all material slots of the mesh components specified in the blueprint asset
 
@@ -442,7 +442,7 @@ After clicking, you can see the detailed operation panel of this function.
 
 In the "Input Blueprint" field, fill in the blueprint asset of the Material you want to replace. In the "Component Name" field, fill in the user-defined component name of the mesh component for which you want to replace the material. In the "Input Material" field, fill in the material asset you want to modify. Finally, click OK and the plugin will perform the operation.
 
-ReplaceMat V1.2
+
 
 The plugin will query whether there is a suitable blueprint mesh Component based on the Component Name entered by the user.
 
@@ -466,7 +466,7 @@ Set the Same Material for Component".
 
 Fill in the blueprint asset of the material you want to replace in the "Input Blueprint" field, fill in the Component Name "bag" of the material
 
-ReplaceMat V1.2 you want to replace in the "Component Name" field, and fill in the ice cube material in the "Input Material" field. After all the Settings are completed, click OK.
+you want to replace in the "Component Name" field, and fill in the ice cube material in the "Input Material" field. After all the Settings are completed, click OK.
 
 ![bo_d4tecgref24c73beecag_51_300_465_911_507_0.jpg](images/bo_d4tecgref24c73beecag_51_300_465_911_507_0.jpg)
 
@@ -474,7 +474,7 @@ After the plugin is executed, it can be seen that the material of only the grid 
 
 ![bo_d4tecgref24c73beecag_51_300_1338_608_795_0.jpg](images/bo_d4tecgref24c73beecag_51_300_1338_608_795_0.jpg)
 
-ReplaceMat V1.2
+
 
 ![bo_d4tecgref24c73beecag_52_298_203_1050_553_0.jpg](images/bo_d4tecgref24c73beecag_52_298_203_1050_553_0.jpg)
 
