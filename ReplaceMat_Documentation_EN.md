@@ -68,20 +68,6 @@ Right-click at any appropriate place, select Editor Utilities, and select Editor
 
 
 
-Create these several Editor Utility Blueprints respectively. AAU_CopyMaterial_from_BP_to_BP, AAU_MatchMaterial_in_BP, AAU_SetTh eSameMaterial_for_BP and AAU_SetTheSameMaterial_for_CP These respectively correspond to several main functions of the plugin.
-
-![bo_d4tecgref24c73beecag_6_309_549_1164_606_0.jpg](images/bo_d4tecgref24c73beecag_6_309_549_1164_606_0.jpg)
-
-![bo_d4tecgref24c73beecag_6_311_1238_1162_604_0.jpg](images/bo_d4tecgref24c73beecag_6_311_1238_1162_604_0.jpg)
-
-
-
-![bo_d4tecgref24c73beecag_7_314_201_1156_597_0.jpg](images/bo_d4tecgref24c73beecag_7_314_201_1156_597_0.jpg)
-
-![bo_d4tecgref24c73beecag_7_318_811_1149_591_0.jpg](images/bo_d4tecgref24c73beecag_7_318_811_1149_591_0.jpg)
-
-![bo_d4tecgref24c73beecag_7_315_1508_1059_500_0.jpg](images/bo_d4tecgref24c73beecag_7_315_1508_1059_500_0.jpg)
-
 ### 3.The various functional modules of the plugin
 
 After the plugin is installed, the user right-click on Scripted Asset in the Unreal Engine Content Browser and selects Scripted Asset Actions. In the submenu, the main functional module menus of the plugin can be seen.
