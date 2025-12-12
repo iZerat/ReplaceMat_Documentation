@@ -62,11 +62,6 @@ Search for "ReplaceMat" and make sure the "ReplaceMat" plugin is enabled. If it 
 
 ![bo_d4tecgref24c73beecag_5_297_463_1169_296_0.jpg](images/bo_d4tecgref24c73beecag_5_297_463_1169_296_0.jpg)
 
-Right-click at any appropriate place, select Editor Utilities, and select Editor Utility blueprint.。
-
-![bo_d4tecgref24c73beecag_5_299_1026_1169_731_0.jpg](images/bo_d4tecgref24c73beecag_5_299_1026_1169_731_0.jpg)
-
-
 
 ### 3.The various functional modules of the plugin
 
