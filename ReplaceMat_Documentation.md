@@ -43,6 +43,7 @@ For example, applicable scenarios: After the project production progress reaches
 
 
 ![bo_d4tecgref24c73beecag_3_241_192_1164_660_0.jpg](images/bo_d4tecgref24c73beecag_3_241_192_1164_660_0.jpg)
+![bo_d4tecgref24c73beecag_3_241_192_1164_660_1.jpg](images/bo_d4tecgref24c73beecag_3_241_192_1164_660_1.jpg)
 
 (The mesh components primarily include static meshes and skeletal meshes, both of which are supported by this functionality. However, the CharacterMesh0 in the blueprint of character parent class is a rather special component and is not applicable to this plugin in some cases.)
 
@@ -131,7 +132,7 @@ Subsequently, the material on the BP_Mannequin blueprint asset was modified to b
 
 At the same time, the execution status of the plugin can also be seen in the Output Log window.
 
-LogTemp: Display: Has been copy 14 materials.
+![1.png](images/1.png)
 
 
 
@@ -189,7 +190,7 @@ Rename the newly created asset by adding the suffix "A01".
 
 For newly created sub-blueprints, it is recommended to click on the "Compile" button below in the blueprint interface, even if the system does not prompt to Compile. This is because not doing so may affect the parent blueprint when modifying the sub-blueprint.
 
-Compile :
+![compile.png](images/compile.png)
 
 Then select all the materials with the A01 suffix, right-click and select Scripted Asset Actions, and select RM Match Material in Blueprint.
 
@@ -297,13 +298,7 @@ The equality pattern is relatively simple. It matches materials with exactly the
 
 At the same time, the execution status of the plugin can also be seen in the Output Log window.
 
-Display:
-
-LogTemp: Display: Match Mode is Equal.
-
-tal of 7 mesh slot materials.
-
-LogTemp: Display: Successful matched and replaced 7 materials.
+![equal_log.png](images/equal_log.png)
 
 ## 5. Shield Mode
 
@@ -461,11 +456,7 @@ After the plugin is executed, it can be seen that the material of only the grid 
 
 At the same time, the execution status of the plugin can also be seen in the Output Log window.
 
-LogTempt Display: Replace Mat Plugins Message
-
-LogTemp: Display: Total of 3 conform to the name component.
-
-LogTemp: Display: Successful set 2 materials.
+![SameMatForComponent_log.png](images/SameMatForComponent_log.png)
 
 This function is similar to the above "RM Set the Same Material for Blueprint", and it can also perform batch operations on multiple blueprint assets simultaneously.
 
@@ -485,8 +476,4 @@ After the plugin is executed, you can see that the hat mesh components in all th
 
 At the same time, the execution status of the plugin can also be seen in the Output Log window.
 
-LogTemp: Display: ---------- Replace Mat Plugins Message
-
-LogTemp: Display: Total of 9 conform to the name component.
-
-LogTemp: Display: Successful set 3 materials.
+![redHat_log.png](images/redHat_log.png)
